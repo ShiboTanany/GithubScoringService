@@ -1,11 +1,11 @@
 package de.redcare.githubscore.infrastructure.client.github;
 
 
+import de.redcare.githubscore.domain.model.Repository;
 import de.redcare.githubscore.domain.repository.GithubRepository;
 import de.redcare.githubscore.infrastructure.client.github.client.GitHubFeignClient;
 import de.redcare.githubscore.infrastructure.client.github.models.GitHubRepositoryDto;
 import de.redcare.githubscore.infrastructure.client.github.models.GitHubSearchResponse;
-import de.redcare.githubscore.domain.model.Repository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

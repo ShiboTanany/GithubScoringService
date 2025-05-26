@@ -1,7 +1,7 @@
 package de.redcare.githubscore.web.controller;
 
-import de.redcare.githubscore.domain.model.ScoredRepository;
 import de.redcare.githubscore.application.service.ScoringService;
+import de.redcare.githubscore.domain.model.ScoredRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

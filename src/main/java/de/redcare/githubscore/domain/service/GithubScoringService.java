@@ -1,11 +1,11 @@
 package de.redcare.githubscore.domain.service;
 
+import de.redcare.githubscore.application.mapper.ScoredRepositoryMapper;
 import de.redcare.githubscore.application.service.ScoringCalculator;
 import de.redcare.githubscore.application.service.ScoringService;
-import de.redcare.githubscore.application.mapper.ScoredRepositoryMapper;
+import de.redcare.githubscore.domain.model.Repository;
 import de.redcare.githubscore.domain.model.ScoredRepository;
 import de.redcare.githubscore.domain.repository.GithubRepository;
-import de.redcare.githubscore.domain.model.Repository;
 import de.redcare.githubscore.web.dto.RepositorySearchRequest;
 import org.springframework.stereotype.Service;
 

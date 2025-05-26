@@ -1,8 +1,8 @@
 package de.redcare.githubscore.domain.services;
 
 import de.redcare.githubscore.domain.config.ScoringProperties;
-import de.redcare.githubscore.domain.service.DefaultScoringCalculator;
 import de.redcare.githubscore.domain.model.Repository;
+import de.redcare.githubscore.domain.service.DefaultScoringCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

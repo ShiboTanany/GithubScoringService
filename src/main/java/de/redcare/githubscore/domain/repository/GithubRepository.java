@@ -1,9 +1,9 @@
 package de.redcare.githubscore.domain.repository;
 
+import de.redcare.githubscore.domain.model.Repository;
 import de.redcare.githubscore.infrastructure.client.github.client.GitHubFeignClient;
 import de.redcare.githubscore.infrastructure.client.github.models.GitHubRepositoryDto;
 import de.redcare.githubscore.infrastructure.client.github.models.GitHubSearchResponse;
-import de.redcare.githubscore.domain.model.Repository;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 

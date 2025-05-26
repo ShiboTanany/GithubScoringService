@@ -1,12 +1,12 @@
 package de.redcare.githubscore.web.controller;
 
 
+import de.redcare.githubscore.application.service.ScoringService;
+import de.redcare.githubscore.domain.model.ScoredRepository;
 import de.redcare.githubscore.web.dto.RepositoryResponse;
 import de.redcare.githubscore.web.dto.RepositorySearchRequest;
 import de.redcare.githubscore.web.dto.SortBy;
 import de.redcare.githubscore.web.dto.SortOrder;
-import de.redcare.githubscore.domain.model.ScoredRepository;
-import de.redcare.githubscore.application.service.ScoringService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

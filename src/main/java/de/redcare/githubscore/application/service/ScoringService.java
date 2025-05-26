@@ -1,7 +1,7 @@
 package de.redcare.githubscore.application.service;
 
-import de.redcare.githubscore.web.dto.RepositorySearchRequest;
 import de.redcare.githubscore.domain.model.ScoredRepository;
+import de.redcare.githubscore.web.dto.RepositorySearchRequest;
 
 import java.util.List;
 

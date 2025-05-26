@@ -20,11 +20,12 @@ This project is a backend application built with Spring Boot that scores GitHub 
 
 ## ✅ Features
 - Score GitHub repositories using a custom popularity algorithm
-- Search by language and creation date
+- Search by language, creation date
 - Clean architecture using DDD principles
 - Unit and integration testing
 - RESTful API with JSON responses
-- Uses openfeign for sync GitHub API access
+- Uses openfeign for sync GitHub API repository
+- Dockerized application 
 
 ## ⚙️ Design Decisions
 - **Open Feign** was chosen for blocking HTTP calls, suitable for not high scalability and aligned with Spring Webmvc.

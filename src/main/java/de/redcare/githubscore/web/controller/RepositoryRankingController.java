@@ -1,11 +1,11 @@
 package de.redcare.githubscore.web.controller;
 
+import de.redcare.githubscore.application.service.ScoringService;
 import de.redcare.githubscore.web.dto.RepositoryResponse;
 import de.redcare.githubscore.web.dto.RepositorySearchRequest;
 import de.redcare.githubscore.web.dto.SortBy;
 import de.redcare.githubscore.web.dto.SortOrder;
 import de.redcare.githubscore.web.mappers.RepositoryMapper;
-import de.redcare.githubscore.application.service.ScoringService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
