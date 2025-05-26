@@ -64,7 +64,7 @@ curl --location 'http://localhost:8080/api/v1/repos?searchQuery=test&language=cs
     "language": "CSS",
     "stars": 46,
     "forks": 38,
-    "lastUpdated": "2025-05-25",
+    "lastUpdated": "2025-05-22T08:59:46Z",
     "score": "20%"
   },
   ...
