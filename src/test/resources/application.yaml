@@ -1,0 +1,47 @@
+spring:
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=100,expireAfterWrite=1h
+  application:
+    name: GitHubScoreService
+management:
+  endpoint:
+    cache:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: cache
+feign:
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+
+
+scoring:
+  normalize: true
+  weights:
+    stars: ${STARS_WEIGHT:0.5}
+    forks: ${FORKS_WEIGHT:0.3}
+    recency: ${RECENCY_WEIGHT:0.2}
+  maximums:
+    stars: ${MAX_STARS:100000}
+    forks: ${MAX_FORKS:50000}
+    recencyDays: ${MAX_RECENCY_DAYS:365}
+
+wiremock:
+  server:
+    port:8040
+
+github:
+  api:
+    debug: true
+    base-url: ${GITHUB_URL:https://api.github.com}
+    timeout: ${TIMEOUT:5000}
+    max-timeout: ${MAX_TIMEOUT:10000}
+    retry:
+      max-attempts: ${MAX_ATTEMPT:3}
+      backoff-delay-ms: ${BACKOFF_DELAY_MS:1000}
