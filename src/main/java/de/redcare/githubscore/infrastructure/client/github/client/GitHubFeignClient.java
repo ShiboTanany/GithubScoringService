@@ -6,7 +6,7 @@ import de.redcare.githubscore.infrastructure.client.github.models.GitHubSearchRe
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-//contextId = "GitHubApiClient",
+
 @FeignClient( name = "GitHubApiClient", url = "${github.api.base-url}", configuration = GitHubFeignConfig.class, fallback = GitHubFallback.class)
 public interface GitHubFeignClient {
 

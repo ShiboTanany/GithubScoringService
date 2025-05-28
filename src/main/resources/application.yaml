@@ -28,7 +28,7 @@ scoring:
     forks: ${FORKS_WEIGHT:0.3}
     recency: ${RECENCY_WEIGHT:0.2}
   maximums:
-    stars: ${MAX_STARS:100000}
+    stars: ${MAX_STARS:1000}
     forks: ${MAX_FORKS:50000}
     recencyDays: ${MAX_RECENCY_DAYS:365}
 

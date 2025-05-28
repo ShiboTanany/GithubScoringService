@@ -38,6 +38,8 @@ public class RepositoryRankingController implements RepositoryRankingApi {
             Integer pageSize,
             LocalDate createdAfter
     ) {
+
+
         RepositorySearchRequest searchRequest = new RepositorySearchRequest(
                 searchQuery,
                 language,

@@ -30,8 +30,8 @@ public class GithubScoringService implements ScoringService {
     /**
      * Constructs a new {@link GithubScoringService} instance.
      *
-     * @param githubRepository     client to fetch repositories from GitHub
-     * @param scoringCalculator   scoring logic to compute popularity
+     * @param githubRepository  client to fetch repositories from GitHub
+     * @param scoringCalculator scoring logic to compute popularity
      */
     public GithubScoringService(GithubRepository githubRepository,
                                 ScoringCalculator scoringCalculator) {
@@ -67,11 +67,12 @@ public class GithubScoringService implements ScoringService {
 
         // Map each repository to a scored repository
         Stream<ScoredRepository> scoredStream = repositories.stream()
-                .parallel()
-                .map(repo -> ScoredRepositoryMapper.toScoredRepository(
-                        repo,
-                        scoringCalculator.calculatePopularityScore(repo)
-                ));
+                .map(repo ->
+                        ScoredRepositoryMapper.toScoredRepository(
+                                repo,
+                                scoringCalculator.calculatePopularityScore(repo)
+
+                        ));
 
         // If sort by score is requested, sort manually based on calculated score
         if (sortByScore) {

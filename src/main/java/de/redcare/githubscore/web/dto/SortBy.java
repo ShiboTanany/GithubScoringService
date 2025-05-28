@@ -12,4 +12,5 @@ public enum SortBy {
 
     @Schema(description = "Sort by calculated score")
     SCORE;
+
 }

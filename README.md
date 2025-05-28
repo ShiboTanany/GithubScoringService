@@ -43,7 +43,7 @@ de.redcare.githubscore
 ```
 
 ## ⚙️ API Usage
-**Endpoint:** `GET /api/repos`
+**Endpoint:** `GET /api/v1/repos`
 
 **Query Parameters:**
 - `language` — Programming language to filter
